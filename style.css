@@ -4,6 +4,7 @@ body {
 	text-align: right;
 	background-image: url('imagesPaz/images/header_bg.png');
 	background-repeat: repeat-x;
+	font-family: Arial;
 }
 #container {
 	width: 900px;
@@ -35,7 +36,14 @@ ul {
 section {
 	margin-top: 20px;
 }
-
+h3{
+	padding: 0;
+	margin: 0;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
 /*header*/
 #logo {
 	display: inline-block;
@@ -56,11 +64,30 @@ section {
 #menu li {
 	display: inline-block;
 }
+#menu ul{
+	 position: relative;
+	 display: block;
+}
+#menu ul ul{
+	display: none;
+	position: absolute;
+	
+}
+#menu ul li:hover > ul {
+	display: list-item;
+}
+#menu ul ul li{
+	display:block;
+	width: 170px;
+	position: relative;
+}
 #search {
 	position: absolute;
 	left: 0;
 	top: 20px;
 }
+
+/* section */
 .box {
 	position: relative;
 	display: inline-block;
@@ -69,17 +96,42 @@ section {
 	background-size: 100% 100%;
 	background-repeat: no-repeat
 }
-.box #pic1{
-	background-image: url('imagesPaz/images/header_bg.png');
+#pic1 {
+	background-image: url('imagesPaz/images/1908364606615453350.JPG');
 }
-.box #pic1{
-	
+#pic2 {
+	background-image: url('imagesPaz/images/Picture-046410251500.jpg');
 }
-.box #pic1{
-	
+#pic3 {
+	background-image: url('imagesPaz/images/פזקר_-291_354410564000.jpg');
 }
 
-.box p {
+.txt_box {
 	position: absolute;
-	bottom: 0;
+    bottom: 3px;
+    color: #FFFFFF;
+    background-image: url('imagesPaz/images/hp_tab_text_bg.png');
+    background-repeat: round;
+    left: 15px;
+    padding: 14px 6px 19px 10px;
 }
+.cubes{
+	margin: 20px 0;
+}
+.cube {
+	position: relative;
+	float: right;
+	width: 244px;
+	padding: 0 24px;
+	height: 216px;
+	background-image: url('imagesPaz/images/small_cube_bg.png');
+	margin: 0 2px;
+}
+.cube h3 {
+	position: relative;
+	height: 34px;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>javascript 03</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	</head>
+	<body>
+
+		<script>
+			var array = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+			var array2 = [2, "two", 3, "three", 4, "four"];
+			var x;
+			var person,
+			    person2,
+			    person3,
+			    person4,
+			    person5;
+			var teacher = {
+				name : "shai",
+				colorEye : "black",
+				height : 1.9
+			};
+			/*var person={name:"adial", colorEye:"blue", height:1.83};
+			 var person2={name:"evyatar", colorEye:"red", height:1.83};
+			 var person3={name:"doron", colorEye:"blue", height:1.83};
+			 var person4={name:"timor", colorEye:"green", height:1.83};
+			 var person5={name:"ehud", colorEye:"black", height:1.83};*/
+			var course = [ person = {
+				name : "adiel",
+				colorEye : "blue",
+				height : 1.83
+			}, person2 = {
+				name : "evyatar",
+				colorEye : "red",
+				height : 1.83
+			}, person3 = {
+				name : "doron",
+				colorEye : "blue",
+				height : 1.83
+			}, person4 = {
+				name : "timor",
+				colorEye : "green",
+				height : 1.83
+			}, person5 = {
+				name : "ehud",
+				colorEye : "black",
+				height : 1.83
+			}];
+			console.log(array);
+			console.log(array.length);
+			console.log(array[0], array[2], array[5]);
+			console.log(array.indexOf(10));
+			array.splice(array.length - 2, 2);
+			console.log(array);
+			console.log(array2);
+
+			console.log(course);
+			/*x=course.shift(course);*/
+			course.splice(0, 2);
+			console.log(course);
+
+			/*course.unshift(teacher);
+			 console.log(course);*/
+			course[0]=person = {
+				name : "adiel",
+				colorEye : "blue",
+				height : 1.83,
+				face:{colorEye:"green"}
+			};
+			console.log(course[0]);
+			
+		</script>
+
+	</body>
+</html>
